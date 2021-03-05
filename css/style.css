@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, .container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label, form {
+  display: flex;
+  flex-direction: column;
+}
+
+label:not(:last-child) {
+  margin-right: 80px;
+}
+
+span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+input {
+  width: 50vw;
+  max-width: 250px;
+}
+
+svg {
+  width: 90vmin;
+  height: 90vmin;
+}
+
+@media(max-width: 500px) {
+  .inputs {
+    justify-content: center;
+  }
+  label:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
